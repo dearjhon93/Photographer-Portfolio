@@ -10,6 +10,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
 </head>
 <body>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+    <!-- Agrega el embed de un video para agregar tiempo de carga -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_U4sLGFouB0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_U4sLGFouB0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_U4sLGFouB0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_U4sLGFouB0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_U4sLGFouB0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_U4sLGFouB0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_U4sLGFouB0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!-- Home -->
     <div class="navbar">
         <a href="#">
             <div class="menu-header">
@@ -38,17 +51,17 @@
         </a>
 
         <div class="sidebar-content">
-            <p>INICIO -></p>
-            <p>GALERIA -></p>    
-            <p>PORTAFOLIO -></p>    
-            <p>PÁGINAS -></p>    
-            <p>CONTACTOS -></p> 
+            <a href="#">INICIO -></a>
+            <a href="https://pixieset.com/example/">GALERIA -></a>
+            <a href="https://pixieset.com/example/">PORTAFOLIO -></a>
+            <a href="#">ACERCA DE MI -></a>
+            <!-- <a href="#">CONTACTOS -></a> -->
         </div>
         <div class="sidebar-footer">
-            <img src="./assets/img-face.png" alt="">
-            <img src="./assets/img-instagram.png" alt="">
-            <img src="./assets/img-twitter.png" alt="">
-            <p>@ 2022 PauliPhoto by DevJhon</p>
+            <a href="https://www.facebook.com" target="_blank"><img src="./assets/img-face.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="./assets/img-instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com/?lang=es" target="_blank"><img src="./assets/img-twitter.png" alt="Twitter"></a>
+            <p>@ 2022 PaulinaPhoto by DevJhon</p>
         </div>
         
 
@@ -209,6 +222,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
+        // Preloader
+        var loader = document.getElementById("preloader")
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+
+        // Slider with Link Lightbox
         lightGallery(document.querySelector('.main'));
     </script>
 </body>

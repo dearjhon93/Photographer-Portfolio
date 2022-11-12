@@ -26,7 +26,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  z-index: 999;
+  z-index: 2;
 }
 
 .navbar .menu-header {
@@ -176,16 +176,16 @@ a {
     line-height: 3em;
     letter-spacing: 4px;
   }
-  .sidebar .sidebar-content p {
+  .sidebar .sidebar-content a {
+    display: inline-block;
     -webkit-transition: -webkit-transform 0.5s ease;
     transition: -webkit-transform 0.5s ease;
     transition: transform 0.5s ease;
     transition: transform 0.5s ease, -webkit-transform 0.5s ease;
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
-    cursor: pointer;
   }
-  .sidebar .sidebar-content p:hover {
+  .sidebar .sidebar-content a:hover {
     -webkit-transform: translateX(10px);
             transform: translateX(10px);
   }
@@ -225,5 +225,13 @@ a {
     --num-cols: 4;
     --row-height: 300px;
   }
+}
+
+#preloader {
+  background: #cd5151 url("/assets/preloader-gif-camera-6.gif") no-repeat center center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
 }
 /*# sourceMappingURL=main.css.map */

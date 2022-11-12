@@ -23,7 +23,7 @@ a{
 
     display: flex;
     justify-content: space-between;
-    z-index: 999;//Hover no muestra por encima
+    z-index: 2;//Hover no muestra por encima
 
     .menu-header{
         display: flex;
@@ -170,10 +170,11 @@ a{
             line-height: 3em;
             letter-spacing: 4px;
     
-            p{
+            a{
+                display: inline-block;
                 transition: transform 0.5s ease;
                 transform: translateX(0px);
-                cursor: pointer;
+                // cursor: pointer;
     
                 &:hover{
                     transform: translateX(10px);
@@ -216,4 +217,13 @@ a{
     }
 }
 
+// Preloader
+#preloader{
+    // background-color: #cd5151;
+    background: #cd5151 url("/assets/preloader-gif-camera-6.gif") no-repeat center center; 
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100; //Frente de todo
+}
   
