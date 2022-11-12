@@ -227,6 +227,10 @@ a {
   }
 }
 
+.frames-load {
+  display: none;
+}
+
 #preloader {
   background: #cd5151 url("/assets/preloader-gif-camera-6.gif") no-repeat center center;
   height: 100vh;

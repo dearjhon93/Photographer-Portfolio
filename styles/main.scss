@@ -218,6 +218,9 @@ a{
 }
 
 // Preloader
+.frames-load{
+    display: none;
+}
 #preloader{
     // background-color: #cd5151;
     background: #cd5151 url("/assets/preloader-gif-camera-6.gif") no-repeat center center; 
