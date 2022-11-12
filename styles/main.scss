@@ -21,7 +21,7 @@ a{
     height: 100vh;
     width: 100%;
     position: fixed;
-    z-index: 3; //Frente de todo
+    z-index: 999; //Frente de todo
 }
 // Preloader
 
@@ -73,7 +73,7 @@ a{
 }
 
 .main {
-    margin-top: 75px;
+    // margin-top: 75px; //Coment for sticky
     --num-cols: 4;
     --row-height: 300px;
     display: grid;
