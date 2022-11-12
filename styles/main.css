@@ -27,8 +27,7 @@ a {
 .navbar {
   overflow: hidden;
   background-color: #333;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   padding: 1em .75em;
@@ -39,7 +38,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  z-index: 2;
+  z-index: 1;
 }
 
 .navbar .menu-header {
@@ -72,7 +71,7 @@ a {
 
 .navbar .menu-icon {
   width: 35px;
-  cursor: pointer;
+  top: 0;
 }
 
 .sidebar {
@@ -103,6 +102,8 @@ a {
   transition: -webkit-transform .5s ease;
   transition: transform .5s ease;
   transition: transform .5s ease, -webkit-transform .5s ease;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
 }
 
 .main .img-hover-zoom:hover img {

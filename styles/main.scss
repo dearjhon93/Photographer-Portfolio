@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;  
 }
 
 a{
@@ -22,13 +22,12 @@ a{
     width: 100%;
     position: fixed;
     z-index: 999; //Frente de todo
-}
-// Preloader
+}// Preloader
 
 .navbar {
     overflow: hidden;
     background-color: #333;
-    position: sticky; //Cambio fixed -> sticky, arregla conflicto con preload
+    position: fixed;
     top: 0;
     width: 100%;
 
@@ -37,7 +36,7 @@ a{
 
     display: flex;
     justify-content: space-between;
-    z-index: 2;//Hover no muestra por encima
+    z-index: 1;//Hover no muestra por encima
 
     .menu-header{
         display: flex;
@@ -64,7 +63,7 @@ a{
     }
     .menu-icon{
         width: 35px;
-        cursor: pointer;
+        top: 0;
     }
 }
 
@@ -89,6 +88,7 @@ a{
             height: 300px;
             object-fit: cover;
             transition: transform .5s ease;
+            cursor: zoom-in;
         }
         &:hover {
             img {

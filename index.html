@@ -7,6 +7,7 @@
     <title>PaulinaPhoto | Inicio</title>
     
     <link rel="stylesheet" href="styles/main.css">
+    <!-- Slider with Link Lightbox -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
 </head>
 <body>
@@ -24,7 +25,7 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/_U4sLGFouB0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
     </div>
     
-    <!-- Home -->
+    <!-- Home Page -->
     <div class="navbar">
         <a href="#">
             <div class="menu-header">
@@ -35,7 +36,7 @@
                 </div>
             </div>
         </a>
-        
+
         <svg class="menu-icon" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 5.33333H24V0H48V5.33333Z" fill="white"/>
         </svg>
@@ -220,7 +221,8 @@
             </div>
         </a>
     </div>
-
+    
+    <!-- Slider with Link Lightbox -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
@@ -228,9 +230,7 @@
         var loader = document.getElementById("preloader")
         window.addEventListener("load", function(){
             loader.style.display = "none";
-
-            
-        })
+        })// Preloader
 
         // Slider with Link Lightbox
         lightGallery(document.querySelector('.main'));
